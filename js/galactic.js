@@ -14,5 +14,6 @@ export class Galactic {
     endDate = new Date(endDate.year,endDate.month,endDate.day,0,0,0,0);
     return Math.abs((startDate.getTime() - endDate.getTime()) / 1000);
   }
+  
 
 }
