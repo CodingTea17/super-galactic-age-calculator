@@ -34,12 +34,18 @@ describe('Galactic', () => {
   });
 
   it('returns the estimated male life expectancy using the provided information', () => {
-    expect(test_galactic.life(1995, 'male', 177)).toEqual("72.8");
+    expect(test_galactic.life(1995, 1, 177)).toEqual("72.8");
   });
+
   it('returns the estimated female life expectancy using the provided information', () => {
-    expect(test_galactic.life(1990, 'female', 177)).toEqual("78.7");
+    expect(test_galactic.life(1990, 0, 177)).toEqual("78.7");
   });
+
   it('returns the estimated female life expectancy when born in 2015 using the provided information', () => {
-    expect(test_galactic.life(2015, 'female', 177)).toEqual("81.6");
+    expect(test_galactic.life(2015, 0, 177)).toEqual("81.6");
   });
+
+  it('returns either the life expectancy of a human or a message of encouragement', () => {
+    expect(test_galactic.very_old(21, 72.8)).toEqual(72.8);
+  })
 });

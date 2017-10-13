@@ -69,10 +69,18 @@ export class Galactic {
           yr_index = 1;
           break;
     }
-    if(gender === "male"){
+    if(gender === 1){
       return this.male_life_span[country][yr_index];
     } else {
       return this.female_life_span[country][yr_index];
+    }
+  };
+
+  very_old(age,expectancy){
+    if(age > expectancy){
+      return "Congratulations you ol'Geezer! You've outlived your calculated life expectancy! Keep doing whatever you're doing, it's working!"
+    } else{
+      return expectancy;
     }
   };
 }
