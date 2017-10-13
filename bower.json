@@ -1,0 +1,19 @@
+{
+  "name": "super-galactic-age-calculator",
+  "description": "#### _Calculates galactic age in terms of earth years, 10/13/2017_",
+  "main": "gulpfile.js",
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "bootstrap": "v4.0.0-beta",
+    "moment": "^2.19.0"
+  }
+}
