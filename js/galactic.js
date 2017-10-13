@@ -14,6 +14,20 @@ export class Galactic {
     endDate = new Date(endDate.year,endDate.month,endDate.day,0,0,0,0);
     return Math.abs((startDate.getTime() - endDate.getTime()) / 1000);
   }
-  
 
+  mercuryYears(age){
+    return age * 0.24;
+  }
+
+  venusYears(age){
+    return age * 0.62;
+  }
+
+  marsYears(age){
+    return age * 1.88;
+  }
+
+  jupiterYears(age){
+    return age * 11.86;
+  }
 }

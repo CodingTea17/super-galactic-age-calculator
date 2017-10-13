@@ -22,7 +22,7 @@ describe('Galactic', () => {
   });
 
   it('returns the age of a human in Venus years', () => {
-    expect(test_galactic.VenusYears(21)).toEqual(13.02);
+    expect(test_galactic.venusYears(21)).toEqual(13.02);
   });
 
   it('returns the age of a human in Mars years', () => {
