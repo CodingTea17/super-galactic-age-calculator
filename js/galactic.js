@@ -19,20 +19,20 @@ export class Galactic {
     return Math.abs((startDate.getTime() - endDate.getTime()) / 1000);
   }
 
-  mercuryYears(age){
-    return age * 0.24;
+  mercuryYears(years){
+    return years * 0.24;
   }
 
-  venusYears(age){
-    return age * 0.62;
+  venusYears(years){
+    return years * 0.62;
   }
 
-  marsYears(age){
-    return age * 1.88;
+  marsYears(years){
+    return years * 1.88;
   }
 
-  jupiterYears(age){
-    return age * 11.86;
+  jupiterYears(years){
+    return years * 11.86;
   }
 
   life(birth_yr, gender, country){
