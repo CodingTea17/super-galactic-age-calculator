@@ -1,12 +1,11 @@
 import { Galactic } from './../js/galactic.js';
 
-describe('Galactic', function(){
-
-  beforeEach(function(){
-
+describe('Galactic', () => {
+  beforeEach(() => {
+    test_galactic = new Galactic();
   });
 
-  it('', function(){
+  it('returns the number ', () => {
 
   });
 });
