@@ -1,4 +1,4 @@
-# _👞👞👞👞👞 Super Galactic Age Calculator 👞👞👞👞👞_
+# _🌌🌌🌌🌌🌌 Super Galactic Age Calculator 🌌🌌🌌🌌🌌_
 
 #### _This application allows a user to manipulate galactic time, 10/13/2017_
 
