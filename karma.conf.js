@@ -19,6 +19,7 @@ module.exports = function(config) {
       'karma-browserify',
       'karma-jasmine',
       'karma-opera-launcher',
+      'karma-chrome-launcher',
       'karma-jasmine-html-reporter'
     ],
 
@@ -32,7 +33,8 @@ module.exports = function(config) {
     colors: true,
     logLevel: config.LOG_INFO,
     autoWatch: true,
-    browsers: ['Opera'],
+    browsers: ['Chrome'],
+    // browsers: ['Opera'],
     singleRun: false,
     concurrency: Infinity
   })
