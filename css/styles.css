@@ -5,3 +5,41 @@ body {
   background-size: cover;
   height: 100vh;
 }
+
+.btn-primary {
+  background-color: #321238 !important;
+  border-color: #321238 !important;
+}
+
+.btn-primary:hover {
+  background-color: #46294b !important;
+  border-color: #46294b !important;
+}
+
+.col-3 {
+  padding: 0px;
+}
+
+.left-btn {
+  padding-right: 15px;
+}
+
+.leftend-btn {
+  padding-left: 15px;
+}
+
+#milli-calc-card {
+  display: none;
+}
+#date-date-card {
+  display: none;
+}
+#galactic-age-card {
+  display: none;
+}
+#life-span-card {
+  display: none;
+}
+#results {
+  display: none;
+}

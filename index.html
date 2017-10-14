@@ -11,7 +11,142 @@
     <div class="container">
       <div class="jumbotron">
         <div class="display-4">Super Galactic Age Calculator!</div>
-        <div class="lead">Choose a calculation to make below<h1>
+        <div class="lead">Choose a calculation to make below</div>
+        <div class="my-4"></div>
+        <div class="row">
+          <div class="col-3 left-btn leftend-btn">
+            <button id="milli-calc" class="btn btn-primary btn-block" type="button">Age => MS</button>
+          </div>
+          <div class="col-3 left-btn">
+            <button id="date-date" class="btn btn-primary btn-block" type="button">Date => Date</button>
+          </div>
+          <div class="col-3 left-btn">
+            <button id="galactic-age" class="btn btn-primary btn-block" type="button">Earth => Galactic Age</button>
+          </div>
+          <div class="col-3 left-btn">
+            <button id="life-span" class="btn btn-primary btn-block" type="button">Life Span</button>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div id="milli-calc-card" class="card">
+            <div class="card-body">
+              <form id="milli-calc-form">
+                <div class="form-group">
+                  <label for="earth-age-years">Enter your age in Earth years in milliseconds:</label>
+                  <input type="text" class="form-control" id="earth-age-years"/>
+                </div>
+                <button id="milli-calc-btn" class="btn btn-success btn-block" type="submit">Calculate</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div id="date-date-card" class="card">
+            <div class="card-body">
+              <form id="date-date-form">
+                <label>Enter the first date in numeric format (ex. 7-31-2017):</label>
+                <div class="form-row">
+                  <div class="col">
+                    <input id="m1" type="text" class="form-control" placeholder="Month">
+                  </div>
+                  <div class="col">
+                    <input id="d1" type="text" class="form-control" placeholder="Day">
+                  </div>
+                  <div class="col">
+                    <input id="y1" type="text" class="form-control" placeholder="Year">
+                  </div>
+                </div><br>
+                <label>Enter the second date in numeric format (ex. 7-31-2017):</label>
+                <div class="form-row">
+                  <div class="col">
+                    <input id="m2" type="text" class="form-control" placeholder="Month">
+                  </div>
+                  <div class="col">
+                    <input id="d2" type="text" class="form-control" placeholder="Day">
+                  </div>
+                  <div class="col">
+                    <input id="y2" type="text" class="form-control" placeholder="Year">
+                  </div>
+                </div><br>
+                <button id="date-date-btn" class="btn btn-success btn-block" type="submit">Calculate</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div id="galactic-age-card" class="card">
+            <div class="card-body">
+              <form id="galactic-age-form">
+                <label for="earth-age">Enter you age in Earth years and select a planet to calculate your age in that planet's years:</label>
+                <div class="form-row">
+                  <div class="col">
+                    <input type="text" class="form-control" id="age"/>
+                  </div>
+                  <div class="col">
+                    <select id="planet" class="form-control">
+                      <option value="0">Mercury</option>
+                      <option value="1">Venus</option>
+                      <option value="2">Mars</option>
+                      <option value="3">Jupiter</option>
+                    </select>
+                  </div>
+                </div><br>
+                <button id="galactic-age-btn" class="btn btn-success btn-block" type="submit">Calculate</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div id="life-span-card" class="card">
+            <div class="card-body">
+              <form id="life-span-form">
+                <label for="Name">Calculate your lifespan on various planets by filling out the form below:</label>
+                <div class="form-row">
+                  <div class="col">
+                    <input type="text" class="form-control" id="birth-yr" placeholder="1995"/>
+                  </div>
+                  <div class="col">
+                    <select id="gender" class="form-control">
+                      <option value="0">Female</option>
+                      <option value="1">Male</option>
+                    </select>
+                  </div>
+                  <div class="col">
+                    <select id="country" class="form-control">
+
+                    </select>
+                  </div>
+                  <div class="col">
+                    <select id="planet-life" class="form-control">
+                      <option value="0">Mercury</option>
+                      <option value="1">Venus</option>
+                      <option value="2">Mars</option>
+                      <option value="3">Jupiter</option>
+                      <<option value="4">Earth</option>
+                    </select>
+                  </div>
+                </div><br>
+                <button id="life-span-btn" class="btn btn-success btn-block" type="submit">Calculate</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col">
+          <div id="results" class="card">
+            <div id="results-body" class="card-body">
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </body>
