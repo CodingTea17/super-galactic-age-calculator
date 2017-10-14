@@ -46,6 +46,6 @@ describe('Galactic', () => {
   });
 
   it('returns either the life expectancy of a human or a message of encouragement', () => {
-    expect(test_galactic.very_old(21, 72.8)).toEqual(72.8);
+    expect(test_galactic.very_old(21, 72.8)).toEqual(`You are expected to live to the ripe old age of 72.8 years`);
   })
 });

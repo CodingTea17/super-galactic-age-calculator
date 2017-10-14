@@ -20,19 +20,19 @@ export class Galactic {
   }
 
   mercuryYears(years){
-    return years * 0.24;
+    return (years * 0.24).toFixed(2);
   }
 
   venusYears(years){
-    return years * 0.62;
+    return (years * 0.62).toFixed(2);
   }
 
   marsYears(years){
-    return years * 1.88;
+    return (years * 1.88).toFixed(2);
   }
 
   jupiterYears(years){
-    return years * 11.86;
+    return (years * 11.86).toFixed(2);
   }
 
   life(birth_yr, gender, country){
@@ -77,10 +77,10 @@ export class Galactic {
   };
 
   very_old(age,expectancy){
-    if(age > expectancy){
+    if(parseInt(age) > parseInt(expectancy)){
       return "Congratulations you ol'Geezer! You've outlived your calculated life expectancy! Keep doing whatever you're doing, it's working!"
     } else{
-      return expectancy;
+      return `You are expected to live to the ripe old age of ${expectancy} years`;
     }
   };
 }
