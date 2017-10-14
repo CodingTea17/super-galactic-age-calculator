@@ -18,31 +18,31 @@ describe('Galactic', () => {
   });
 
   it('accepts an age and returns the age of a human in Mercury years', () => {
-    expect(test_galactic.mercuryYears(21)).toEqual(5.04);
+    expect(test_galactic.mercuryYears(21)).toEqual('5.04');
   });
 
   it('accepts an age and returns the age of a human in Venus years', () => {
-    expect(test_galactic.venusYears(21)).toEqual(13.02);
+    expect(test_galactic.venusYears(21)).toEqual('13.02');
   });
 
   it('accepts an age and returns the age of a human in Mars years', () => {
-    expect(test_galactic.marsYears(21)).toEqual(39.48);
+    expect(test_galactic.marsYears(21)).toEqual('39.48');
   });
 
   it('accepts an age and returns the age of a human in Jupiter years', () => {
-    expect(test_galactic.jupiterYears(21)).toEqual(249.06);
+    expect(test_galactic.jupiterYears(21)).toEqual('249.06');
   });
 
   it('returns the estimated male life expectancy using the provided information', () => {
-    expect(test_galactic.life(1995, 1, 177)).toEqual("72.8");
+    expect(test_galactic.life(1995, 1, 177)).toEqual('72.8');
   });
 
   it('returns the estimated female life expectancy using the provided information', () => {
-    expect(test_galactic.life(1990, 0, 177)).toEqual("78.7");
+    expect(test_galactic.life(1990, 0, 177)).toEqual('78.7');
   });
 
   it('returns the estimated female life expectancy when born in 2015 using the provided information', () => {
-    expect(test_galactic.life(2015, 0, 177)).toEqual("81.6");
+    expect(test_galactic.life(2015, 0, 177)).toEqual('81.6');
   });
 
   it('returns either the life expectancy of a human or a message of encouragement', () => {
